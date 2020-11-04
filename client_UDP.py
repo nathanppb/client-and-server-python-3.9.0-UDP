@@ -9,5 +9,5 @@ print ("\nmensagem enviada\n")                                          # Confir
 Mensagem_enviar, serverAddress = client_socket.recvfrom(1024)           # Le o socket do SERVIDOR e pega IP do mesmo
 print ("IP DO SERVIDOR: ", serverAddress,"\n")                          # Mostra o IP e a Porta do Servidor
 print ("Retorno do servidor: ", Mensagem_enviar)                        # Mostra a mensagem que o Servidor Retornou
-
+stop = input("")
 client_socket.close()                                                   # Fecha o socket
