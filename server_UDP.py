@@ -14,5 +14,5 @@ Mensagem_Modificada =  math.exp(float(mensagem))                        # Aplica
 print ("mensagem recebida modificada: ", Mensagem_Modificada)           # Printando a mensagem modificada pelo SERVIDOR
 Mensagem_enviar = str(Mensagem_Modificada).encode('utf-8')              # Convertendo Float para string
 serv_socket.sendto(bytes(Mensagem_enviar), ClientAddress)               # Convertendo a string para bytes e enviando a mensagem de volta para o cliente
-
+stop = input("")
 serv_socket.close()                                                     # Fecha o socket
